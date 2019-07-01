@@ -14,18 +14,11 @@ before:
 steps:
   - title: Hello World
     description: Show a message and make sure everything is working!
-    event: page_build
+    event: push
     link: "{{ repoUrl }}/issues/1"
     actions:
-      - type: octokit
-        method: repos.getPages
-        owner: "%payload.repository.owner.login%"
-        repo: "%payload.repository.name%"
-        action_id: pagesUrl
       - type: respond
-        with: 00-openapr.md
-        data:
-          pagesUrl: "%actions.pagesUrl.data.html_url%"
+        with: woot.md
         issue: Welcome
 
   - title: Open a pull request
