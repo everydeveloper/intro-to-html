@@ -44,7 +44,7 @@ steps:
         data:
           welcomeLink: "%actions.prev.data.html_url%"
 
-  - title: Build the HTML document structure
+  - title: Third step
     description: Follow the instructions to write the base structure of your HTML file
     event: pull_request.synchronize
     link: "{{ repoUrl }}/pulls"
