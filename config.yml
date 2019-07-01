@@ -9,7 +9,6 @@ before:
   - type: createIssue
     title: Welcome
     body: 01-welcome.md
-  - type: updateBranchProtection
 
 steps:
   - title: Hello World
