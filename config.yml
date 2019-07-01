@@ -21,7 +21,7 @@ steps:
         with: woot.md
         issue: Welcome
 
-  - title: Open a pull request
+  - title: Next step
     description: Open a pull request.
     event: pull_request.opened
     link: "{{ repoUrl }}/issues/1"
